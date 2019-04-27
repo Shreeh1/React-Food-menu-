@@ -57,7 +57,9 @@ class Dishdetail extends Component {
     render() {
         const dish = this.props.dish
         if (dish == null) {
-            return (<div></div>)
+            return (
+                <div></div>
+            )
         }
         const dishItem = this.renderDish(dish)
         const commentItem = this.renderComments(dish.comments)
