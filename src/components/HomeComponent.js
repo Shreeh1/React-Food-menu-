@@ -3,6 +3,7 @@ import {Card, CardImg, CardBody, CardText, CardTitle, CardSubtitle} from 'reacts
 
 function RenderCard({item}){
     return(
+        <div className="col-12 col-md-5 m-1">
         <Card>
             <CardImg src={item.image} alt={item.name}/>
             <CardBody>
@@ -11,6 +12,7 @@ function RenderCard({item}){
                 <CardText>{item.description}</CardText>
             </CardBody>
         </Card>
+        </div>
     )
 }
 
